@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>Calculo de IMC</h1>
+<br>
+<br>
+<script>     
+    function saltoLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(peso, altura, nombre){
+        document.write("El IMC de " + nombre);
+        saltoLinea();
+        document.write("tomando en cuenta su altura de " + altura + " m.")
+        saltoLinea();
+        document.write("y su peso de " + peso + " kg.");
+        saltoLinea();
+        document.write("<big>" + "Su IMB es de " + calculoImc(peso, altura));
+        saltoLinea();    
+    }
+
+    function calculoImc(peso, altura){
+        return peso/(altura*altura);
+    }
+
+    var peso1 = 98;
+    var altura1 = 1.82;
+    var nom1 = "Maxi";
+
+    var peso2 = 75;
+    var altura2 = 1.65;
+    var nom2 = "Araceli";
+
+    imprimir(peso1, altura1, nom1);
+    imprimir(peso2, altura2, nom2);
+
+</script>

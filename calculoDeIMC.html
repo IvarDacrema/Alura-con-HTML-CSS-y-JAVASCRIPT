@@ -28,14 +28,14 @@
         document.write("El promedio de los IMC es de " + ((imc1+imc2)/2));
     }
 
-    var peso1 = 98;
-    var altura1 = 1.82;
-    var nom1 = "Maxi";
+    var nom1 = prompt("Introduzca su nombre");
+    var peso1 = prompt("Tu Peso");
+    var altura1 = prompt("Tu altura");
     var imc1 = calculoImc(peso1, altura1);
 
-    var peso2 = 75;
-    var altura2 = 1.65;
-    var nom2 = "Araceli";
+    var nom2 = prompt("Introduce el nombre de tu compañero");
+    var peso2 = prompt("su peso");
+    var altura2 = prompt("su altura");
     var imc2 = calculoImc(peso2, altura2);
 
     imprimir(peso1, altura1, nom1);

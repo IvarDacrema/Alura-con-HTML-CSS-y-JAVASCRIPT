@@ -16,10 +16,10 @@
     }    
 
     var equipo = prompt("Nombra a tu equipo");
-    var victorias = prompt("¿Cuantas victorias tuvo " + equipo + "?");
-    var empates = prompt("¿Cuantos empates tuvo " + equipo + "?");
+    var victorias = parseInt(prompt("¿Cuantas victorias tuvo " + equipo + "?"));
+    var empates = parseInt(prompt("¿Cuantos empates tuvo " + equipo + "?"));
     var derrotas = prompt("¿Cuantas derrotas tuvo " + equipo + "?");
-    var puntos = (victorias*3 + parseInt(empates));
+    var puntos = (victorias*3 + empates);
     
     imprimir(equipo + " tiene.");
     imprimir(victorias + " victorias.");

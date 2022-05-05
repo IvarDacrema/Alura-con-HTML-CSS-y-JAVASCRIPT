@@ -27,5 +27,15 @@
     imprimir(derrotas + " derrotas.");
     imprimir("con una suma total de " + puntos + " de puntos en el torneo.")
 
+    var puntosAnhoPasado = parseInt(prompt("Introduzca los puntos del años pasado."));
+    
+    if(puntosAnhoPasado>puntos){
+        imprimir("La campaña fue peor que la del año pasado");
+    }if(puntosAnhoPasado==puntos){
+        imprimir("La campaña fue igual que la del año pasado.");
+    }if(puntosAnhoPasado<puntos) {
+        imprimir("La temporada fue mejor a la del año pasado.");  
+    } 
+      
     </script>
 

@@ -12,7 +12,7 @@ function imprimir(frase){
     document.write("<br>");
 }    
 
-var numeroIncognito  = 12;
+var numeroIncognito  = Math.round(Math.random()*100);
 
 alert("JUEGO DE ADIVINANZA");
 
@@ -21,10 +21,24 @@ alert("tiene que adivinar cual es el numero entero que estamos pensando");
 var numeroUsuario = parseInt(prompt("¿Cual es el numero que estamos pensado?"))
 
 while(numeroIncognito!=numeroUsuario){   
+    
     if(numeroIncognito<numeroUsuario){
-        alert(numeroUsuario + " es más grande que Numero Incognito");
+        if((numeroUsuario-numeroIncognito) >= 30){
+            alert(numeroUsuario + " es mucho mas grande que numero incognito");
+        } if ((numeroUsuario-numeroIncognito) <= 5){
+            alert(numeroUsuario + " es apenas mas grande")
+        } if ((numeroUsuario-numeroIncognito) > 5 && (numeroUsuario-numeroIncognito) < 30){
+            alert(numeroUsuario + " es más grande que Numero Incognito");
+        }
+       
     }if(numeroIncognito>numeroUsuario){
-        alert(numeroUsuario + " es más chico que numero Incognito");
+        if((numeroIncognito-numeroUsuario) >= 30){
+            alert(numeroUsuario + " es mucho mas chico que numero incognito");
+        } if ((numeroIncognito-numeroUsuario) <= 5){
+            alert(numeroUsuario + " es apenas mas chico")
+        } if ((numeroIncognito-numeroUsuario) > 5 && (numeroUsuario-numeroIncognito) < 30){
+            alert(numeroUsuario + " es más chico que Numero Incognito");
+        }
     }    
     numeroUsuario = parseInt(prompt("¿Cual es el numero que estamos pensado?"));
 }

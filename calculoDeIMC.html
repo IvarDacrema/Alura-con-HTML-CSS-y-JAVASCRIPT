@@ -16,7 +16,7 @@
         saltoLinea();
         document.write("y su peso de " + peso + " kg.");
         saltoLinea();
-        document.write("<big>" + "es de " + calculoImc(peso, altura));
+        document.write("es de " + calculoImc(peso, altura));
         saltoLinea();    
     }
 
@@ -29,16 +29,18 @@
     }
 
     var nom1 = prompt("Introduzca su nombre");
-    var peso1 = prompt("Tu Peso en Kg --> xx.x");
-    var altura1 = prompt("Tu altura en metros --> x.xx");
+    var peso1 = parseFloat(prompt("Tu Peso en Kg --> xx.x"));
+    var altura1 = parseFloat(prompt("Tu altura en metros --> x.xx"));
     var imc1 = calculoImc(peso1, altura1);
 
     var nom2 = prompt("Introduce el nombre de tu compañero");
-    var peso2 = prompt("su peso");
-    var altura2 = prompt("su altura");
+    var peso2 = parseFloat(prompt("su peso"));
+    var altura2 = parseFloat(prompt("su altura"));
     var imc2 = calculoImc(peso2, altura2);
 
     imprimir(peso1, altura1, nom1);
     imprimir(peso2, altura2, nom2);
     imprimirImc(imc1, imc2);
+
+
 </script>

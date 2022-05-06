@@ -12,37 +12,51 @@ function imprimir(frase){
     document.write("<br>");
 }    
 
-var numeroIncognito  = Math.round(Math.random()*100);
 
 alert("JUEGO DE ADIVINANZA");
 
 alert("tiene que adivinar cual es el numero entero que estamos pensando");
 
-var numeroUsuario = parseInt(prompt("¿Cual es el numero que estamos pensado?"))
+var numVar = parseInt(prompt("Introduzca entre cuantos numeros quiere adivinar."));
 
-while(numeroIncognito!=numeroUsuario){   
-    
-    if(numeroIncognito<numeroUsuario){
-        if((numeroUsuario-numeroIncognito) >= 30){
-            alert(numeroUsuario + " es mucho mas grande que numero incognito");
-        } if ((numeroUsuario-numeroIncognito) <= 5){
-            alert(numeroUsuario + " es apenas mas grande")
-        } if ((numeroUsuario-numeroIncognito) > 5 && (numeroUsuario-numeroIncognito) < 30){
-            alert(numeroUsuario + " es más grande que Numero Incognito");
-        }
+var numeroIncognito  = Math.round(Math.random()*numVar);
+
+var limiteIntentos = parseInt(prompt("¿Cuantos intentos quieres tener?"));
+
+var numeroUsuario = parseInt(prompt("¿Cual es el numero?"));
+
+var cont = 0;
+
+while(numeroIncognito!=numeroUsuario && cont!=limiteIntentos){
+ 
+        cont = cont++;
+        if(numeroIncognito<numeroUsuario){
+            if((numeroUsuario-numeroIncognito) >= 30){
+                alert(numeroUsuario + " es mucho mas grande que numero incognito");
+            } if ((numeroUsuario-numeroIncognito) <= 5){
+                alert(numeroUsuario + " es apenas mas grande")
+            } if ((numeroUsuario-numeroIncognito) > 5 && (numeroUsuario-numeroIncognito) < 30){
+                alert(numeroUsuario + " es más grande que Numero Incognito");
+            }
        
-    }if(numeroIncognito>numeroUsuario){
-        if((numeroIncognito-numeroUsuario) >= 30){
-            alert(numeroUsuario + " es mucho mas chico que numero incognito");
-        } if ((numeroIncognito-numeroUsuario) <= 5){
-            alert(numeroUsuario + " es apenas mas chico")
-        } if ((numeroIncognito-numeroUsuario) > 5 && (numeroIncognito-numeroUsuario) < 30){
-            alert(numeroUsuario + " es más chico que Numero Incognito");
-        }
-    }    
-    numeroUsuario = parseInt(prompt("¿Cual es el numero que estamos pensado?"));
+        }if(numeroIncognito>numeroUsuario){
+            if((numeroIncognito-numeroUsuario) >= 30){
+                alert(numeroUsuario + " es mucho mas chico que numero incognito");
+            } if ((numeroIncognito-numeroUsuario) <= 5){
+                alert(numeroUsuario + " es apenas mas chico")
+            } if ((numeroIncognito-numeroUsuario) > 5 && (numeroIncognito-numeroUsuario) < 30){
+                alert(numeroUsuario + " es más chico que Numero Incognito");
+            }
+        }    
+        numeroUsuario = parseInt(prompt("¿Cual es el numero que estamos pensado?"));    
 }
 
-imprimir("CORRECTO");
+if(numeroIncognito==numeroUsuario){
+    alert("CORRECTO");
+} else {
+    alert("PERDISTE")
+}
+
+imprimir("Fin del Programa");
 
 </script>

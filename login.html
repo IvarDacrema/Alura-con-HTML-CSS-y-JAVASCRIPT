@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var inicioDeSesionRegistrado = "Maxi";
+    var contrasenhaRegistrada = "Morocha2022";
+    var inicioDeSesionIngresado = null;
+    var contrasenhaIngresada = null;
+    var contUsuario = 0;
+    var contContra = 0;   
+    
+    inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    
+    if(inicioDeSesionIngresado==inicioDeSesionRegistrado){
+       
+        contrasenhaIngresada = prompt("Ingrese su contraseña");
+       
+         if(contrasenhaIngresada==contrasenhaRegistrada){
+                alert("BIENVENIDOS AL SISTEMA " + inicioDeSesionIngresado)
+            } else {
+                alert("Contraseña incorrecta, intentelo nuevamente.");
+                contrasenhaIngresada = prompt("Ingrese su contraseña");
+                while(contContra<=1){
+                    if(contContra = contContra + 1){
+                    alert("Contraseña erronea pruebe nuevamente");
+                    contrasenhaIngresada = prompt("Ingrese su contraseña");
+                    } else {
+                        
+                    }
+                }
+                alert("BIENVENIDOS AL SISTEMA " + inicioDeSesionIngresado);
+                
+        }
+    }
+
+
+
+    while(contUsuario<=2){
+        inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        if(inicioDeSesionRegistrado == inicioDeSesionIngresado) {
+            contrasenhaIngresada = prompt("Ingrese su contraseña");
+            while(contrasenhaRegistrada != contrasenhaIngresada && contContra<=2 ){
+                contContra = contContra + 1;
+                alert("Contraseña erronea pruebe nuevamente");
+                contrasenhaIngresada = prompt("Ingrese su contraseña");
+            }  
+                alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+                break;
+            
+        } else {
+            contUsuario = contUsuario + 1;
+            alert("Tu usuario es incorrecto, vuelva a intentarlo.")
+        }
+    }
+        alert("Acesso denegado")
+   
+</script>

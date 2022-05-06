@@ -15,7 +15,7 @@ function imprimir(frase){
 
 alert("JUEGO DE ADIVINANZA");
 
-alert("tiene que adivinar cual es el numero entero que estamos pensando");
+alert("Tiene que adivinar cual es el numero entero que estamos pensando");
 
 var numVar = parseInt(prompt("Introduzca entre cuantos numeros quiere adivinar."));
 
@@ -23,13 +23,16 @@ var numeroIncognito  = Math.round(Math.random()*numVar);
 
 var limiteIntentos = parseInt(prompt("¿Cuantos intentos quieres tener?"));
 
-var numeroUsuario = parseInt(prompt("¿Cual es el numero?"));
+var cont = 1;
 
-var cont = 0;
+alert("INTENTO " + cont);    
+        
+var numeroUsuario = parseInt(prompt("¿Cual es el numero?"));
 
 while(numeroIncognito!=numeroUsuario && cont!=limiteIntentos){
  
-        cont = cont++;
+        cont = cont+1;
+        
         if(numeroIncognito<numeroUsuario){
             if((numeroUsuario-numeroIncognito) >= 30){
                 alert(numeroUsuario + " es mucho mas grande que numero incognito");
@@ -47,14 +50,16 @@ while(numeroIncognito!=numeroUsuario && cont!=limiteIntentos){
             } if ((numeroIncognito-numeroUsuario) > 5 && (numeroIncognito-numeroUsuario) < 30){
                 alert(numeroUsuario + " es más chico que Numero Incognito");
             }
-        }    
-        numeroUsuario = parseInt(prompt("¿Cual es el numero que estamos pensado?"));    
+        }  
+        
+        alert("INTENTO " + cont);
+        numeroUsuario = parseInt(prompt("¿Cual es el numero?"));
 }
 
 if(numeroIncognito==numeroUsuario){
-    alert("CORRECTO");
+    alert("CORRECTO el numero era " + numeroUsuario);
 } else {
-    alert("PERDISTE")
+    alert("PERDISTE el numero era " + numeroIncognito)
 }
 
 imprimir("Fin del Programa");

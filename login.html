@@ -6,7 +6,7 @@
     var contrasenhaRegistrada = "Morocha2022";
     var contrasenhaIngresada = null;
     var contUsuario = 1;
-    var contContra = 0; 
+    var contContra = 1; 
     
     var inicioDeSesionIngresado = prompt("Ingrese su usuario");
     
@@ -32,7 +32,7 @@
                 contContra = contContra + 1;
                 contrasenhaIngresada = prompt("Ingrese su contraseña");
             }
-            if(contContra==2){
+            if(contContra==3){
                 alert("Acceso Denegado");
             } else {
                 alert("Bienvenido " + inicioDeSesionRegistrado);

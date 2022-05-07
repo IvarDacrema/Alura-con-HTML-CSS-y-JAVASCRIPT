@@ -9,7 +9,7 @@ function saltoLinea(){
 
 function imprimir(frase){
     document.write(frase);
-    document.write("<br>");
+    saltoLinea();
 }    
 
 
@@ -52,7 +52,6 @@ while(numeroIncognito!=numeroUsuario && cont!=limiteIntentos){
             }
         }  
         
-        alert("INTENTO " + cont);
         numeroUsuario = parseInt(prompt("¿Cual es el numero?"));
 }
 

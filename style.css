@@ -20,4 +20,9 @@ em strong{
 
 #mision{
     font-size: 20px;
+    font-style: italic;
+}
+
+.items{
+    font-style: italic;
 }

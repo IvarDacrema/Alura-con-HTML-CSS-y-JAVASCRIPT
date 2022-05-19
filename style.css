@@ -115,6 +115,11 @@ form label, form p{
     margin: 20px 0;
 }
 
+.lista-selector{
+    padding: 5px;
+    margin: 8px 0 0 5px;
+}
+
 .checkbox{
     margin: 20px 0;
 }

@@ -26,34 +26,34 @@
     <main>
         <form>
             <label for="nombre_apellido">Nombre y Apellido</label>
-            <input type="text" id="nombre_apellido" class="imput-padron">
+            <input type="text" id="nombre_apellido" class="imput-padron" required>
 
             <label for="correo_electronico">Correo Electronico</label>
-            <input type="text" id="correo_electronico" class="imput-padron">
+            <input type="email" id="correo_electronico" class="imput-padron" required placeholder="email@dominio.com">
 
             <label for="telefono">Telefono</label>
-            <input type="text" id="telefono" class="imput-padron">
+            <input type="tel" id="telefono" class="imput-padron" required placeholder="XXX XXXXXXX">
 
             <label for="mensaje">Mensaje</label>
             <textarea cols="70" rows="10" id="mensaje"></textarea>
 
             <div class="forma-contacto">
-                <p>Como le gustaria que lo contactemos</p>
+                <p>¿Como le gustaria que lo contactemos?</p>
                 <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
                 <label for="telefono"><input type="radio" name="contacto" value="telefono" id="telefono">Telefono</label>
-                <label for="whatsapp"><input type="radio" name="contacto" value="whatsapp" id="whatsapp">Email</label>
+                <label for="whatsapp"><input type="radio" name="contacto" value="whatsapp" id="whatsapp" checked>Whatsapp</label>
             </div>
 
             <div class="selector">
-                <p>En que horario prefiere ser atendido</p>
-                <select>
+                <p>¿En que horario prefiere ser atendido?</p>
+                <select class="lista-selector">
                     <option>Mañana</option>
                     <option>Tarde</option>
                     <option>Noche</option>
                 </select>
             </div>
 
-            <label class="checkbox"><input type="checkbox">Le gustaria recibir novedades de la barberia Alura</label>
+            <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la barberia Alura</label>
 
             <input type="submit" value="Enviar Formulario">
         </form>

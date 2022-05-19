@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="caja">
-            <h1><img src="imagenes/logo.png"></h1>
+            <h1><img src="imagenes/logo.png" alt="Logo de la Barberia Alura"></h1>
             <nav>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="productos.html">Productos</a></li>
@@ -37,21 +37,21 @@
             <label for="mensaje">Mensaje</label>
             <textarea cols="70" rows="10" id="mensaje"></textarea>
 
-            <div class="forma-contacto">
-                <p>¿Como le gustaria que lo contactemos?</p>
+            <fieldset class="forma-contacto">
+                <legend>¿Como le gustaria que lo contactemos?</legend>
+                <label for="whatsapp"><input type="radio" name="contacto" value="whatsapp" id="whatsapp" checked>Whatsapp</label></label>
                 <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
                 <label for="telefono"><input type="radio" name="contacto" value="telefono" id="telefono">Telefono</label>
-                <label for="whatsapp"><input type="radio" name="contacto" value="whatsapp" id="whatsapp" checked>Whatsapp</label>
-            </div>
+            </fieldset>
 
-            <div class="selector">
-                <p>¿En que horario prefiere ser atendido?</p>
+            <fieldset class="selector">
+                <legend>¿En que horario prefiere ser atendido?</legend>
                 <select class="lista-selector">
                     <option>Mañana</option>
                     <option>Tarde</option>
                     <option>Noche</option>
                 </select>
-            </div>
+            </fieldset>
 
             <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la barberia Alura</label>
 
@@ -60,7 +60,7 @@
     </main>
 
     <footer class="pie_pagina">
-        <img src="imagenes/logo-blanco.png">
+        <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
         <p class="copyright">&copy Copyright Barberia Alura - 2022</p>
     </footer>
 </body>

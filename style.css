@@ -133,10 +133,13 @@ form label, form legend{
     background: orange;
     border-radius: 5px;
     border-color: orange;
-    transition: 1s background;
+    transition: 2s all;
     cursor: pointer;
+    margin-left: 22px;
+    margin-top: 20px;
 }
 
 .enviar:hover{
     background: orangered;
+    transform: scale(1.2);
 }

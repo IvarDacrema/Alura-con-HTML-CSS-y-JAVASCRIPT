@@ -94,11 +94,6 @@ footer{
     margin: 20px;
 }
 
-main{
-    width: 940px;
-    margin: 0 auto;
-}
-
 form{
     margin: 40px 0;
 }
@@ -171,6 +166,13 @@ td, th{
     width: 100%;
 }
 
+.principal{
+    background: #fefefe;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .titulo-principal{
     text-align: center;
     font-size: 2em;
@@ -199,11 +201,22 @@ td, th{
 
 .mapa{
     padding: 1em 0;
+    background: linear-gradient(#fefefe, #cccccc, #aaaaaa);
 }
 
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
+}
+
+.map-google{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: linear-gradient(#aaaaaa, #888888);
 }
 
 .contenido-diferenciales{
@@ -232,4 +245,5 @@ td, th{
 .video-youtube{
     width: 560px;
     margin: 30px auto;
+    background: linear-gradient(#888888, #666666, #444444, #222222);
 }
